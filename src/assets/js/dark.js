@@ -1,4 +1,4 @@
-//
+/* //
 //    The Dark Mode System
 //
 
@@ -38,3 +38,4 @@ document.getElementById('dark-mode-toggle').addEventListener('click', () => {
 	// on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
 	localStorage.getItem('theme') === 'light' ? enableDarkMode() : disableDarkMode();
 });
+*/
