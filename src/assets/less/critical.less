@@ -13,6 +13,9 @@
         text-align: center;
         /* changes on tablet */
         padding: 0 (16/16rem);
+        padding-left: 2rem;
+        padding-right: 2rem;
+
         position: relative;
         z-index: 1;
         /* prevents overflow from the lines extending past the screen width */
@@ -62,8 +65,10 @@
             /* 144px - 280px - leaving extra space for the navigation */
             /* changes on tablet */
             padding: clamp(10.25rem, 25.95vw, 17.5rem) 0 ;
+            padding-bottom: 2rem;
             margin: auto;
             position: relative;
+        
 
             &:before {
                 /* Left Line */
@@ -99,11 +104,12 @@
         .cs-logo{
 
             display: flex;
-            width: 45%;
+            
 
-            max-width: 50rem;
-            margin-bottom: 1rem;
-            height: 11rem;
+            max-width: 30rem;
+            margin-bottom: 1.75rem;
+            height: 17rem;
+            width: auto;
         }
 
         .cs-topper {
@@ -191,10 +197,10 @@
             text-decoration: none;
 	    	font-weight: 700;
             margin: 0;
-            color: #fff;
+            color: #1a1a1c;
             padding: 0;
             background-color: transparent;
-            border: 1px solid var(--bodyTextColorWhite);
+            border: 1px solid var(--headerColor);
             box-sizing: border-box;
             display: inline-flex;
             justify-content: center;
@@ -266,7 +272,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #hero-229 {
-        background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+       /*  background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg"); */
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;

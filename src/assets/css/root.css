@@ -20,6 +20,8 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --leftPadding: 3rem;
+    --rightPadding: 3rem;
   }
   body {
     margin: 0;
@@ -948,6 +950,141 @@ html {
     position: relative;
   }
   #cta p {
+    text-align: center;
+    width: 96%;
+    max-width: 37.375rem;
+    margin: auto;
+    margin-bottom: 2.25rem;
+    color: #fff;
+    opacity: 1;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5rem 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    margin-top: 6.25rem;
+    position: relative;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: "";
+    width: 125rem;
+    height: 69.25rem;
+    background: url("/assets/svgs/cta-squares.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -3;
+    transform: translateX(-50%);
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/*-- -------------------------- -->
+<---    donate-section   -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #donate-section {
+    padding: 3.125rem 0;
+    position: relative;
+  }
+  #donate-section .donation-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    /* Adjust the gap between options as needed */
+    margin-bottom: 36px;
+    /* Adjust margin-bottom as needed */
+  }
+  #donate-section .donation-options .donation-option {
+    display: inline-block;
+  }
+  #donate-section .donation-options .donation-option img {
+    width: 150px;
+    /* Set a fixed width for the images */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Make sure the image doesn't exceed its container */
+    cursor: pointer;
+    /* Add pointer cursor to indicate it's clickable */
+    border-radius: 0.5rem;
+  }
+  #donate-section:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #donate-section .container {
+    text-align: center;
+  }
+  #donate-section picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #donate-section picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #donate-section .title {
+    font-size: min(9vw, 3rem);
+    font-weight: 900;
+    line-height: 1.20833333em;
+    text-align: center;
+    margin-bottom: 2.25rem;
+    color: #fff;
+    position: relative;
+  }
+  #donate-section p {
     text-align: center;
     width: 96%;
     max-width: 37.375rem;
